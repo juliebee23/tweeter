@@ -17,8 +17,7 @@
   </div>
 
   <div class="field form-group">
-    <%= form.label :user_id %>
-    <%= form.number_field :user_id, id: :tweet_user_id, class: "form-control" %>
+    <%= form.hidden_field :user_id, value: current_user.id %>
   </div>
 
   <div class="actions form-group">
