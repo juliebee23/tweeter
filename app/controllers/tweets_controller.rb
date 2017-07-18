@@ -6,7 +6,7 @@ class TweetsController < ApplicationController
   # GET /tweets
   # GET /tweets.json
   def index
-    @tweets = Tweet.over(created_at: :desc)
+    @tweets = Tweet.all
   end
 
   # GET /tweets/1
@@ -70,6 +70,6 @@ class TweetsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tweet_params
-      params.require(:tweet).permit(:message, :user_id)
+      params.require(:tweet).permit(:message, :user_id, :link)
     end
 end
