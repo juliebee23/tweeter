@@ -16,9 +16,13 @@
 @import "bootstrap";
 @import "font-awesome";
 
+body {
+  background: linear-gradient(to bottom right, white, grey);
+}
+
  /* Navbar styling */
 .navbar-default .navbar-brand  {
-  font-family: 'Coffee House', cursive;
+  font-family: 'Coffee House';
   font-size: 30px;
   color: rgb(29,161,242);
 }
